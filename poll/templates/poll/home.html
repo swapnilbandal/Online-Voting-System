@@ -1,0 +1,42 @@
+{% extends "poll/base.html" %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>{% block title %}Online Voting System{% endblock %}</title>
+</head>
+{% comment %} {% block title %}Online Voting System{% endblock %} {% endcomment %}
+
+{% block content %}
+<!--<body style="background-color:black;"-->
+<style>
+.body {
+  background-image: url('../media/images/bg1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../media/images/election1.jpg" class="d-block w-100" alt="..." width="280" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="../media/images/election.jpg" class="d-block w-100" alt="..." width="280" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="../media/images/election2.jpg" class="d-block w-100" alt="..." width="280" height="500">
+    </div>
+  </div>
+  </div>
+    
+<div class="jumbotron text-center">
+  <h1>Welcome to Online Voting System</h1>
+  <h3>Your Vote Matters !!!</h3>
+</div>
+
+
+{% endblock %}

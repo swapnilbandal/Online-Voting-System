@@ -1,0 +1,21 @@
+{% extends "poll/base.html" %}
+
+
+
+{% block content %}
+<!--<body style="background-color:LightCyan;">-->
+
+  <legend><h1 style="color:white;">Hi,{{ request.user.get_full_name }}</h1></legend><br>
+  <h1 style="color:white;">Please Cast Your Vote Here !</h1>
+  <br><a href="{% url 'position' %}" class="btn btn-primary btn-lg" role="button" data-bs-toggle="button">Vote</a>
+  <!--<h3><a href="{% url 'position' %}">Vote</a></h3>-->
+  <!--<br><br><a href="{% url 'result' %}" class="btn btn-success btn-lg" role="button" data-bs-toggle="button">Results</a>-->
+  <!--<h3><a href="{% url 'result' %}">Results</a></h3>-->
+  <style>
+body {
+  background-image: url('../media/images/bg1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+  
+{% endblock %}

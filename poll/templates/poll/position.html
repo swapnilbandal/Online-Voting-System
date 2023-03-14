@@ -1,0 +1,22 @@
+{% extends "poll/base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+  <h1 style="color:white;">Available Position For Vote</h1>
+  <ul>
+  
+  <br>
+    {% for i in obj %}
+      <li style="color:white;"><legend><a style="color:white;" href="{% url 'candidate' i.id %}">{{i.title}}</a></legend></li>
+    {% empty %}
+      <h2style="color:white;">No Positions Available</h2 style=>
+    {% endfor %}
+  </ul>
+  <style>
+body {
+  background-image: url('../media/images/bg1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+{% endblock %}
